@@ -1,6 +1,6 @@
 {
-  "name": "ZenBar",
-  "description": "🧘 Sleek, intelligent top status bar auto-hide & distraction-free Zen mode for GNOME Shell.",
+  "name": "ZenBar - Hide Top Bar",
+  "description": "Sleek and intelligent way to hide top bar with Auto-Hide. Automatically hide top bar or permanently hide for a distraction-free Zen mode. Features smart edge peek on hover, active menu protection, and keyboard shortcut toggle.",
   "uuid": "zenbar@shivant7857.github.io",
   "shell-version": [
     "45",
