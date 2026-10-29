@@ -1,0 +1,17 @@
+{
+  "name": "ZenBar",
+  "description": "🧘 Sleek, intelligent top status bar auto-hide & distraction-free Zen mode for GNOME Shell.",
+  "uuid": "zenbar@shivant7857.github.io",
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50",
+    "51"
+  ],
+  "settings-schema": "org.gnome.shell.extensions.zenbar",
+  "url": "https://github.com/Shivant7857/zenbar",
+  "version": 1
+}
