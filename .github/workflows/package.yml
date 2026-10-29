@@ -1,0 +1,31 @@
+name: Package & Release ZenBar
+
+on:
+  push:
+    branches: [ "main" ]
+    tags: [ "v*" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gnome-shell libglib2.0-bin-dev
+
+      - name: Compile schema & validate bundle
+        run: |
+          glib-compile-schemas schemas/
+          gnome-extensions pack --force --extra-source=stylesheet.css --out-dir=.
+
+      - name: Upload bundle artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: zenbar-shell-extension
+          path: "*.shell-extension.zip"
