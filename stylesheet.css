@@ -1,0 +1,18 @@
+/*
+ * ZenBar — Custom UI Styling
+ * Author: Shivant (https://github.com/Shivant7857)
+ */
+
+.zenbar-pill {
+    border-radius: 9999px;
+    padding: 6px 16px;
+    font-weight: bold;
+}
+
+.zenbar-card {
+    transition: all 200ms ease-in-out;
+}
+
+.zenbar-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
