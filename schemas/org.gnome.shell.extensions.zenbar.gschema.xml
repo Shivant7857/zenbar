@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.zenbar" path="/org/gnome/shell/extensions/zenbar/">
+    <key name="mode" type="s">
+      <default>'autohide'</default>
+      <summary>Hide Mode</summary>
+      <description>Mode for status bar: 'autohide' (smart peek on top hover), 'permanent' (ghost/distraction-free), or 'visible' (standard)</description>
+    </key>
+    <key name="animation-time" type="d">
+      <default>0.25</default>
+      <summary>Animation Duration</summary>
+      <description>Slide animation speed in seconds</description>
+    </key>
+    <key name="hide-delay" type="i">
+      <default>250</default>
+      <summary>Hide Delay</summary>
+      <description>Delay in milliseconds before re-hiding after cursor leaves panel</description>
+    </key>
+    <key name="show-in-overview" type="b">
+      <default>true</default>
+      <summary>Show in Activities Overview</summary>
+      <description>Reveal top bar when entering GNOME Activities Overview</description>
+    </key>
+    <key name="pressure-threshold" type="i">
+      <default>20</default>
+      <summary>Edge Sensitivity Threshold</summary>
+      <description>Sensitivity threshold for top edge mouse trigger</description>
+    </key>
+    <key name="toggle-shortcut" type="as">
+      <default>['&lt;Super&gt;&lt;Alt&gt;h']</default>
+      <summary>Toggle Shortcut</summary>
+      <description>Global shortcut to toggle top bar visibility</description>
+    </key>
+  </schema>
+</schemalist>
