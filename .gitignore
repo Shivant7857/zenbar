@@ -1,0 +1,10 @@
+# Build artifacts
+*.shell-extension.zip
+schemas/gschemas.compiled
+*.log
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
